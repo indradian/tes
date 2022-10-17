@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GET GAMES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleIndex.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body onload="getIndex()">
+    <header id="home">
+      <div class="navigation">
+        <a class="logo" href="index.html">
+          <img class="logo-picture" src="img/logo.png" alt="logo">
+        </a>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About </a></li>
+          </ul>
+        </nav>
+        <a class="profile-btn" href="profile.html"><button class="profile-txt"> </button></a> 
+      </div>
+      <div class="welcome-text" style="text-align: center">
+        <p id="welcome1"> </p>
+        <p id="welcome2">Get Your Games Here<p> 
+        <a id="popular-btn" href="#popular" ><button class="btn1" >See Popular Games</button></a>
+        </div>
+    </header>
+    <div class="content"> 
+      <div id="popular">
+        <div id="popular-title" style="display: flex; gap: 10px">
+          <img class="icon-1" src="icon/fire.png" alt="popular" >
+          <p class="title-1">Popular Games</p>
+        </div> 
+        <div class="popular-one">
+          <div id="popular-yt"> 
+            <iframe  src="https://www.youtube.com/embed/IhhjcB2ZjIM?rel=0"></iframe>
+          </div>
+          <div class="popular-txt"> 
+              <p class="game-1">Valorant</p>
+              <div style="display: flex">
+                <p class="game-2" style="background-color: #219fe3">Free to Play</p> 
+                <p class="game-2" style="background-color: #17e417">Shooter Game</p> 
+              </div>
+              <p class="game-3">Valorant is a team-based first-person hero shooter set in the near future. Players play as one of a set of Agents, 
+                characters based on several countries and cultures around the world. In the main game mode, players are assigned 
+                to either the attacking or defending team with each team having five players on it.</p>
+              <a class="game-4" href="https://playvalorant.com/id-id/" target="_blank">
+                <button id="btn2">Get It</button></a>
+              </div>
+        </div> 
+        
+        <!-- <table class="popular-table" style="border-spacing: 0px 50px" >
+          <tr class="popular-three">
+            <td>
+              <iframe id="popular-yt" src="https://www.youtube.com/embed/QkkoHAzjnUs?rel=0"></iframe>
+            </td>
+            <td class="popular-txt"> 
+                <p class="game-1">GTA V</p>
+                <div style="display: flex">
+                  <p class="game-2" style="background-color: #219fe3">Free to Play</p> 
+                  <p class="game-2" style="background-color: #17e417"> Action-Adventure Game</p> 
+                </div>
+                <p class="game-3">In 2004, Michael Townley, Trevor Philips, and Brad Snider partake in a failed robbery in Ludendorff, North Yankton, 
+                  resulting in Michael being presumed dead. Nine years later, Michael lives with his family in the city of Los Santos 
+                  under the alias Michael De Santa, having made a secret agreement with the Federal Investigation Bureau (FIB)[j] agent 
+                  Dave Norton to stay hidden. Across town, gangster Franklin Clinton works for a corrupt car salesman and meets Michael 
+                  while attempting to fraudulently repossess his son's car.</p>
+                <a class="game-4" href="https://www.rockstargames.com/gta-v" target="_blank">
+                  <button id="btn2">Get It</button></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="categories">
+        <div id="categories-title" style="display: flex; margin-bottom: 40px; gap: 10px">
+          <img class="icon-1" src="icon/categories.png" alt="popular" >
+          <p class="title-1">Categories</p>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)">Shooter Game</span>
+          <span class="dot" onclick="currentSlide(2)">Racing Game</span>
+          <span class="dot" onclick="currentSlide(3)">Role-Playing Game</span>
+        </div>
+        <div class="categories-row fade">
+          <p class="game-5">Shooter Game</p>  
+          <table class="categories-table" style="border-spacing: 20px 0px">
+            <tr class="categories-banner">
+              <td><img class="game-6" src="img/pubg.png" alt="pubg"></td>
+              <td><img class="game-6" src="img/apex.png" alt="apex"></td>
+              <td><img class="game-6" src="img/aliens.png " alt="aliens"></td>
+              <td><img class="game-6" src="img/cod.png" alt="cod"></td>
+              <td><img class="game-6" src="img/battlefield.png" alt="Battlefield_V"></td> 
+            </tr>
+            <tr class="categories-txt">
+              <td>
+                <p class="title-2">PUBG</p>
+                <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                  <p class="game-8">Free to Play</p>
+                  <a class="game-7" href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" target="_blank">
+                    <button id="btn3">Get It</button></a>
+                </div>
+              </td>
+              <td>
+                <p class="title-2">Apex Legends</p>
+                <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                  <p class="game-8">Free to Play</p>
+                  <a class="game-7" href="https://store.steampowered.com/app/1172470/Apex_Legends/" target="_blank">
+                    <button id="btn3">Get It</button></a>
+                </div>
+              </td>
+              <td>  
+                <p class="title-2">Aliens: Fireteam Elite</p>
+                <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                  <p class="game-8">Paid Games</p>
+                  <a class="game-7" href="https://store.steampowered.com/app/1549970/Aliens_Fireteam_Elite/" target="_blank">
+                    <button id="btn3">Get It</button></a>
+                </div>
+              </td>
+              <td>  
+                <p class="title-2">Call of Duty®: WWII</p>
+                <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                  <p class="game-8">Paid Games</p>
+                  <a class="game-7" href="https://store.steampowered.com/app/476600/Call_of_Duty_WWII/  " target="_blank">
+                    <button id="btn3">Get It</button></a>
+                </div>
+              </td>
+              <td>  
+                <p class="title-2">Battlefield V</p>
+                <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                  <p class="game-8">Paid Games</p>
+                  <a class="game-7" href="https://store.steampowered.com/app/1238810/Battlefield_V/" target="_blank">
+                    <button id="btn3">Get It</button></a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="categories-row fade">
+          <p class="game-5">Racing Game</p>  
+        <table class="categories-table" style="border-spacing: 20px 0px">
+          <tr class="categories-banner">
+            <td><img class="game-6" src="img/trackmania.png" alt="trackmania"></td>
+            <td><img class="game-6" src="img/forza.png" alt="forza"></td>
+            <td><img class="game-6" src="img/mxbikes.png" alt="mxbikes"></td>
+            <td><img class="game-6" src="img/f1.png" alt="F1_22"></td>
+            <td><img class="game-6" src="img/nfs.png" alt="nfs"></td> 
+          </tr>
+          <tr class="categories-txt">
+            <td>
+              <p class="title-2">TrackMania Nations Forever</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Free to Play</p>
+                <a class="game-7" href="https://store.steampowered.com/app/11020/TrackMania_Nations_Forever/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>
+              <p class="title-2">Forza Horizon 5</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>  
+              <p class="title-2">MX Bikes</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href="https://store.steampowered.com/app/655500/MX_Bikes/ " target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>  
+              <p class="title-2">F1® 22</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href="https://store.steampowered.com/app/1692250/F1_22/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>  
+              <p class="title-2">Need for Speed™ Heat</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="categories-row fade">
+          <p class="game-5">Role-Playing Game</p>  
+        <table class="categories-table" style="border-spacing: 20px 0px">
+          <tr class="categories-banner">
+            <td><img class="game-6" src="img/raid.png" alt="raid"></td>
+            <td><img class="game-6" src="img/eldenring.png" alt="eldenring"></td>
+            <td><img class="game-6" src="img/thewitcher.png" alt="thewitcher"></td>
+            <td><img class="game-6" src="img/skyrm.png" alt="skyrm"></td>
+            <td><img class="game-6" src="img/warframe.png" alt="warframe"></td> 
+          </tr>
+          <tr class="categories-txt">
+            <td>
+              <p class="title-2">Raid: Shadow Legends</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Free to Play</p>
+                <a class="game-7" href="https://raidshadowlegends.com/pc-mac-plarium-play/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>
+              <p class="title-2">Elden Ring</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href=https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>  
+              <p class="title-2">The Witcher 3: Wild Hunt</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>  
+              <p class="title-2">The Elder Scrolls V: Skyrim</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Paid Games</p>
+                <a class="game-7" href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+            <td>  
+              <p class="title-2">Warframe</p>
+              <div style="display: flex; justify-content: space-around; margin: 0px 22px;">
+                <p class="game-8">Free to Play</p>
+                <a class="game-7" href="https://store.steampowered.com/app/230410/Warframe/" target="_blank">
+                  <button id="btn3">Get It</button></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="about">
+        <div id="about-title" style="display: flex; gap: 10px">
+          <img class="icon-1" src="icon/about.png" alt="popular" >
+          <p class="title-1">About</p>
+        </div>
+        <p id="about-txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <p id="copyright">Copyright &#169; 2022 || IndraDian</p>
+    </footer>       
+  </body> 
+</html> -->

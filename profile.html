@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GET GAMES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleProfile.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body onload="getProfile()">
+    <header>
+      <a class="logo" href="index.html">
+        <img class="logo-picture" src="img/logo.png" alt="logo">
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="index.html#about">About </a></li>
+        </ul>
+      </nav>
+      <a class="profile-btn" href="profile.html"><button class="profile-txt"> </button></a>
+    </header>
+    <div class="content">
+      <table id="profile">
+        <tr id="profile-row1">
+          <td id="profile-name-c1">Name</td>
+          <td id="profile-name-c2"><p id="saved-name"></p></td>
+          <td id="profile-name-c3"><button class="btn1" onclick="changeName()">Change</button> </td>
+        </tr>
+        <br><br><br><br>
+        <tr  id="profile-row2">
+          <td id="profile-email-c1"><p>Email </p></td>
+          <td id="profile-email-c2"><p id="saved-email"></p></td>
+          <td id="profile-email-c3"><button class="btn1" onclick="changeEmail()">Change</button> </td>
+        </tr>
+        <br><br><br><br>
+        <tr  id="profile-row3">
+          <td id="profile-join-c1"><p>Join since </p></td>
+          <td id="profile-join-c2"><p>: January 2022 </p></td>
+        </tr>
+      </table>
+      
+    
+  </body>
+</html>
